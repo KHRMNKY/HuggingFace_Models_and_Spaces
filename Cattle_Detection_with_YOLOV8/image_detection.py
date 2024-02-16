@@ -6,7 +6,7 @@ import os
 
 __file__= "HUGGINGFACE _MODELS_AND_SPACES"
 current_dırectory= os.path.dirname(os.path.abspath(__file__))
-folder= os.path.join(current_dırectory,"yolov8_model_on_custom_data")
+folder= os.path.join(current_dırectory,"Cattle_Detection_with_YOLOV8")
 pt= os.path.join(folder, "best.pt")
 py= os.path.join(folder, "image_detection.py")
 rqrmt= os.path.join(folder, "requirements.txt")
