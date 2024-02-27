@@ -19,7 +19,7 @@ This project retrieves the transcript of a YouTube video based on its URL and th
 
 3.Add your Deepseek coder API key to the `.env` file:
     
-    ```plaintext
+    ```
     api_key=your_openai_api_key 
 
     ```
