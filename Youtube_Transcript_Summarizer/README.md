@@ -7,7 +7,7 @@ This project retrieves the transcript of a YouTube video based on its URL and th
 1. Clone this project locally:
 
     ```bash
-    git clone https://github.com/KHRMNKY/HuggingFace_Models_and_Spaces.git
+    git clone https://github.com/KHRMNKY/HuggingFace_Models_and_Spaces
     cd Youtube_Transcript_Summarizer
     ```
 
@@ -21,16 +21,11 @@ This project retrieves the transcript of a YouTube video based on its URL and th
 3. Run the project:
 
     
-    python app.py [api_key]("https://platform.deepseek.com/api_keys) [model]("https://platform.openai.com/docs/models/overview) [youtube_url]("https://www.youtube.com/watch?v=tMWJGs3CQ_Q&t=224s)
+    python app.py api_key model youtube_url
+    
+    DeepSeek Coder Model: [deepseek-chat](https://platform.deepseek.com/)
 
-
-    
-    
-    DeepSeek Coder Model: deepseek-chat
-
-    OpenAI Models: gpt-4, gpt-4 turbo, gpt-3.5 Turbo...
-    
-    
+    OpenAI Models: [Openai Models](https://platform.openai.com/docs/models)
 
 
 ## DeepSeek Coder api (free)
