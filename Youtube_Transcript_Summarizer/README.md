@@ -23,14 +23,18 @@ This project retrieves the transcript of a YouTube video based on its URL and th
     
     python app.py [api_key]("https://platform.deepseek.com/api_keys) [model]("https://platform.openai.com/docs/models/overview) [youtube_url]("https://www.youtube.com/watch?v=tMWJGs3CQ_Q&t=224s)
 
+
     
-    #DeepSeek Coder Model: deepseek-chat
-    #OpenAI Models: gpt-4, gpt-4 turbo, gpt-3.5 Turbo...
+    
+    DeepSeek Coder Model: deepseek-chat
+
+    OpenAI Models: gpt-4, gpt-4 turbo, gpt-3.5 Turbo...
     
     
 
 
 ## DeepSeek Coder api (free)
+-----------------------------------------
 
 To access the Hugging Face interface for this project, use the following link:
 
