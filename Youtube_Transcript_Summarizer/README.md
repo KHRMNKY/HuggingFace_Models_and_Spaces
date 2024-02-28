@@ -23,7 +23,7 @@ This project retrieves the transcript of a YouTube video based on its URL and th
 3. Run the project:
 
     
-    python app.py api_key model youtube_url
+    python app.py <api_key> <model> <youtube_url>
     
     DeepSeek Coder Model: [deepseek-chat](https://platform.deepseek.com/)
 
