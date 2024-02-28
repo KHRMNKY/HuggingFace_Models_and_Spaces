@@ -1,6 +1,8 @@
 # Video Summary Generator
 
 This project retrieves the transcript of a YouTube video based on its URL and then summarizes the transcript using the Deepseek Coder api or OpenAI api.
+![image](https://github.com/KHRMNKY/HuggingFace_Models_and_Spaces/assets/83987220/723e873f-dc72-4e6d-946c-59d832fc7df1)
+
 
 ## How to Run
 
@@ -20,12 +22,16 @@ This project retrieves the transcript of a YouTube video based on its URL and th
     
 3. Run the project:
 
-    ```bash
+    
     python app.py <api_key> <model> <youtube_url>
-    ```
+    
+    DeepSeek Coder Model: [deepseek-chat](https://platform.deepseek.com/)
+
+    OpenAI Models: [Openai Models](https://platform.openai.com/docs/models)
 
 
 ## DeepSeek Coder api (free)
+-----------------------------------------
 
 To access the Hugging Face interface for this project, use the following link:
 
@@ -46,6 +52,5 @@ To access the Hugging Face interface for this project, use the following link:
 To access the Hugging Face interface for this project, use the following link:
 
 [Hugging Face Interface](https://huggingface.co/spaces/KAHRAMAN42/youtube_transcript)
-
 
 

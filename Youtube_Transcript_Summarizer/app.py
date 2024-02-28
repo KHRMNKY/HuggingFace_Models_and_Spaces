@@ -4,7 +4,6 @@ import argparse
 
 
 def parse_args():
-  
   """
   A function to parse command-line arguments for the API key, model, and URL.
   Returns the parsed arguments.
@@ -42,7 +41,6 @@ model = args.model
 
 
 def youtube_url(url):
-  
   """
   Function to retrieve the transcript of a YouTube video based on the provided URL.
   
@@ -64,46 +62,35 @@ def youtube_url(url):
 
 
 def summarization(prompt):
-
   """
   This function takes a prompt as input and uses the OpenAI API to generate a chat completion based on the prompt. It returns the summary of the chat completion.
   """
 
   system_msg = "you are a youtube transcript summarizer."
   
+
   if model == "deepseek-chat":
-    
-    client = OpenAI(api_key = api_key, base_url="https://api.deepseek.com/v1")
-    completion = client.chat.completions.create(
-      model = model,
-      messages=[
-        {"role": "system", "content": system_msg},
-        {"role": "user", "content": prompt}
-      ]
-    )
+    base_url = "https://api.deepseek.com/v1"
 
-    summary = completion.choices[0].message.content
-    return summary
-  
-  
+
   else:
-    client = OpenAI(api_key = api_key)
+    base_url = None
 
-    completion = client.chat.completions.create(
-      model = model,
-      messages=[
-        {"role": "system", "content": system_msg},
-        {"role": "user", "content": prompt}
-      ]
-    )
+  client = OpenAI(api_key = api_key, base_url=base_url)
+  completion = client.chat.completions.create(
+    model = model,
+    messages=[
+      {"role": "system", "content": system_msg},
+      {"role": "user", "content": prompt}
+    ]
+  )
 
-    summary = completion.choices[0].message.content
-    return summary
+  summary = completion.choices[0].message.content
+  return summary
 
 
 
 def main(url):
-
   """
   Function to
   summarize the transcript of a YouTube video using the provided URL.
