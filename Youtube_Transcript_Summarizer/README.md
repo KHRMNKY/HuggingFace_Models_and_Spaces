@@ -54,3 +54,8 @@ To access the Hugging Face interface for this project, use the following link:
 [Hugging Face Interface](https://huggingface.co/spaces/KAHRAMAN42/youtube_transcript)
 
 
+
+https://github.com/KHRMNKY/HuggingFace_Models_and_Spaces/assets/83987220/933c1a66-cd63-4678-872c-ea8074fda8c5
+
+
+
