@@ -11,8 +11,8 @@ folder= os.path.join(current_dırectory,"Cattle_Detection_with_YOLOV8")
 pt= os.path.join(folder, "best.pt")
 py= os.path.join(folder, "Detection_Video.py")
 rqrmt= os.path.join(folder, "requirements.txt")
-example_video= os.path.join(folder, "/home/kahraman/Masaüstü/HuggingFace_Models_and_Spaces/Cattle_Detection_with_YOLOV8/cow-video-cows-mooing-and-grazing-in-a-field.mp4")
-
+example_video= os.path.join(folder, "cows-and-cows-and-cows.mp4")
+output_video= os.path.join(folder, "output_video.mp4")
 
 def fonk(video_path):
   
@@ -22,7 +22,7 @@ def fonk(video_path):
   frame_width = int(cap.get(3)) 
   frame_height = int(cap.get(4))
   size = (frame_width, frame_height)
-  output_video= "filename.mp4"
+  output_video= "output_video.mp4"
   writer = cv2.VideoWriter(output_video,  
                          cv2.VideoWriter_fourcc(*"DIVX"), 
                          10, size) 
@@ -41,7 +41,7 @@ def fonk(video_path):
             x1, y1, x2, y2 = map(int, box.xyxy[0])
             print(x1, y1, x2, y2)
             frame = cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
-        writer.write(frame)
+            writer.write(frame)
       
       
   writer.release()
