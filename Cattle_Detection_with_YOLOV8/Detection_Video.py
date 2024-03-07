@@ -11,7 +11,7 @@ folder= os.path.join(current_dırectory,"Cattle_Detection_with_YOLOV8")
 pt= os.path.join(folder, "best.pt")
 py= os.path.join(folder, "Detection_Video.py")
 rqrmt= os.path.join(folder, "requirements.txt")
-example_video= os.path.join(folder, "cows-and-cows-and-cows.mp4")
+example_video= os.path.join(folder, "cow-video-cows-mooing-and-grazing-in-a-field.mp4")
 output_video= os.path.join(folder, "output_video.mp4")
 
 def fonk(video_path):
